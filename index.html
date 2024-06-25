@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/font/flaticon.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <!-- =================Body Started==================== -->
+    <body>
+        <!-- =================================********================================= -->
+        <div id="show_menuitems" class="my-menu">
+            <div class="menu-box">
+                <span>
+                    <i onclick="hide_menu()" class="flaticon-cancel"></i>
+                </span>
+                <ul>
+                    <li><a onclick="hide_menu()" href="#home">Home</a></li>
+                    <li><a onclick="hide_menu()" href="#about">Specialization</a></li>
+                    <li><a onclick="hide_menu()" href="#resume">Resume</a></li>
+                    <li><a onclick="hide_menu()" href="#portfolio">Projects</a></li>
+                    <li><a onclick="hide_menu()" href="#textimonial">Reviews</a></li>
+                    <li><a onclick="hide_menu()" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+            <!-- =================================********================================= -->
+            <section id="home">
+                <header>
+                    <div class="container">
+                        <div class="main-nav">
+                            <div class="logo">
+                                <h2>Parth Rana</h2>
+                            </div>
+                            <div class="social-media">
+                                <ul>
+                                    <li><a target="_blank"><i class="flaticon-facebook" onclick="goToSocialMedia('facebook')"></i></a></li>
+                                    <li><a href="https://x.com/Parth_1401?t=TAWbcVT6Ip0Ju91sLHDN5Q&s=08" target="_blank"><i class="flaticon-twitter" onclick="goToSocialMedia('twitter')"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/parth-rana-483623222/" target="_blank"><i class="flaticon-linkedin" onclick="goToSocialMedia('linkedin')"></i></a></li>
+                                </ul>
+                            </div>
+                            <div onclick="show_menu()" class="my-toogle">
+                                <span><i class="flaticon-menu"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="container">
+                    <div class="row">
+                        <div class="my-wrapper">
+                            <div class="inter">
+                                <h6>Introduce</h6>
+                            </div>
+                            <div class="welcome-box">
+                                <h3>Welcome to<span>My Page!!</span></h3>
+                            </div>
+                            <div class="name-box">
+                                <h1>Hello ! <br><span class="animated-text">I'm Parth.</span></h1>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="copy-right">
+                            <h6>© Parth 2024</h6>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <style>
+                /* Add CSS for animation */
+                .animated-text {
+                    opacity: 0;
+                    transition: opacity 1s ease-in-out;
+                }
+            
+                .animate {
+                    opacity: 1;
+                }
+            </style>
+            
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var animatedText = document.querySelector('.animated-text');
+            
+                    function checkVisibility(element) {
+                        var position = element.getBoundingClientRect();
+                        return (position.top >= 0 && position.bottom <= window.innerHeight);
+                    }
+            
+                    function addAnimation() {
+                        if (checkVisibility(animatedText)) {
+                            animatedText.classList.add('animate');
+                            window.removeEventListener('scroll', addAnimation);
+                        }
+                    }
+            
+                    window.addEventListener('scroll', addAnimation);
+                    addAnimation();
+                });
+            </script>
+            
+            <!-- =================================********================================= -->
+            <section id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="wrapper">
+                            <div class="left-wrapper animated fadeInLeft">
+                                <div class="content">
+                                    <div class="title">
+                                        <h4>About me</h4>
+                                        <h2>MY MISSION IS <span>DESIGN & DEVELOP</span>
+                                            THE BEST WEBSITES AROUND</h2>
+                                        <p>I am a problem-solver at heart, constantly exploring new technologies and best practices to deliver high-quality, scalable, and efficient solutions. I thrive in collaborative environments and enjoy working with cross-functional teams to bring projects from concept to completion. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-wrapper animated fadeInRight">
+                                <div class="content _yt_er_ol">
+                                    <div class="_re_uy_iu">
+                                        <div class="_ol_ew_xs">
+                                            <span>HTML , CSS AND JAVASCRIPT</span>
+                                            <span>80%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div style="width: 80%;" class="progress-bar my-bars" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="_re_uy_iu">
+                                        <div class="_ol_ew_xs">
+                                            <span>AngularJs/ReactJs</span>
+                                            <span>55%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div style="width: 55%;" class="progress-bar my-bars" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="_re_uy_iu">
+                                        <div class="_ol_ew_xs">
+                                            <span>Java Programming</span>
+                                            <span>70%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div style="width: 70%;" class="progress-bar my-bars" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inter animated fadeInUp">
+                                <h6>WHAT I DO</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- =================================********================================= -->
+            <section id="resume" class="animated fadeIn">
+                <div class="container">
+                    <div class="row">
+                        <div class="my-wrapper">
+                            <div class="left-wrapper">
+                                <div class="content">
+                                    <div class="head">
+                                        <h2>Education</h2>
+                                    </div>
+                                    <div class="list-inner">
+                                        <ol>
+                                            <li>
+                                                <h4>B.E in Information Technology</h4>
+                                                <h6>Government Engineering College , Bhavnagar</h6>
+                                                <span>sep 25 2021 to july 14 2025 </span>
+                                                <p>I am an Information Technology student at Government Engineering College, Bhavnagar, with a passion for coding, problem-solving, and technology innovation. Currently pursuing a Bachelor of Engineering (B.E.), I am dedicated to gaining in-depth knowledge and practical experience in the IT field.</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-wrapper">
+                                <div class="content">
+                                    <div class="head">
+                                        <h2>Experience</h2>
+                                    </div>
+                                    <div class="list-inner">
+                                        <ol>
+                                            <li>
+                                                <h4>Tatvasoft Software company(intern)</h4>
+                                                <h6>Virtual Community Support</h6>
+                                                <span>June 29 2024 to July 12 2024 </span>
+                                                <p>Utilizing Angular for the front end, .NET for the back end, and PostgreSQL as the database. The internship will conclude with a deployment session on Azure</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inter">
+                                <h6>RESUME</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- =================================********================================= -->
+            <section id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="my-wrapper">
+                            <div class="wrapper-box">
+                                <div class="content">
+                                    <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                                        
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="free-template" data-toggle="tab" href="#free" role="tab" aria-controls="free" aria-selected="true">2024</a>
+                                        </li>
+                                        
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="premium-template" data-toggle="tab" href="#premium" role="tab" aria-controls="premium" aria-selected="true">2025</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="others-template" data-toggle="tab" href="#others" role="tab" aria-controls="others" aria-selected="true">Others</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content" id="myTabContent">
+                                        <!-- ------------***----------- -->
+                                        <div class="tab-pane fade show active" id="free" role="tabpanel" aria-labelledby="free-template">
+                                            <div class="content-list">
+                                                <ol>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/1.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/2.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/3.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/4.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/5.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/6.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/7.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/8.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <!-- ------------***----------- -->
+                                        <div class="tab-pane fade " id="premium" role="tabpanel" aria-labelledby="premium-template">
+                                            <div class="content-list">
+                                                <ol>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/5.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/6.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/7.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/8.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/1.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/2.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/3.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/4.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <!-- ------------***----------- -->
+                                        <div class="tab-pane fade " id="others" role="tabpanel" aria-labelledby="others-template">
+                                            <div class="content-list">
+                                               <ol>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/1.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/2.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/3.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="_ok-vd_zs">
+                                                            <figure>
+                                                                <img src="assets/images/abt/4.jpg">
+                                                                <div class="inner-content">
+                                                                    <a href="#">Live Preview</a>
+                                                                </div>
+                                                            </figure>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inter">
+                                <h6>Portfolio</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =================================********================================= -->
+            <section id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="heading">
+                                <h2>Get in Touch</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <input class="form-control" name="121" type="text" required="name" placeholder="Enter Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <input class="form-control" name="122" type="text" required="email" placeholder="Enter Your Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input class="form-control" name="123" type="text" required="subject" placeholder="Subject (optinal)">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea class="" cals="40" rows="10" name="124" type="text" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="send">
+                                            <a href="#">Send</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="inter">
+                                <h6>Contact</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- =================================********================================= -->
+
+        <!-- =================================********================================= -->
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/script.js"></script>
+
+    </body>
+    <!-- =================Body End==================== -->
+</html>
